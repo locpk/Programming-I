@@ -78,12 +78,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
+    <ClInclude Include="..\Console.h" />
+    <ClInclude Include="lab1.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Console.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Q1.cpp" />
     <ClCompile Include="Q2.cpp" />
+    <ClCompile Include="Q3.cpp" />
+    <ClCompile Include="Q4.cpp" />
+    <ClCompile Include="Q5.cpp" />
+    <ClCompile Include="Q6.cpp" />
+    <ClCompile Include="Q7.cpp" />
+    <ClCompile Include="Q8.cpp" />
+    <ClCompile Include="Q9.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

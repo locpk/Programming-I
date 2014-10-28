@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "lab1.h"
 
 int Q1()
 {
