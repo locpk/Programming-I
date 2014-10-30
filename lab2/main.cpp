@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-	/*cout << "This is Lab 2-1:" << endl;
+	cout << "This is Lab 2-1:" << endl;
 	Q1();
 	cout << endl;
 	
@@ -26,7 +26,7 @@ int main()
 	cout << "This is Lab 2-6:" << endl;
 	Q6();
 	cout << endl;
-	*/
+	
 	cout << "This is Lab 2-7:" << endl;
 	Q7();
 	cout << endl;
