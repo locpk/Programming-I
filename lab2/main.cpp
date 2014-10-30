@@ -18,15 +18,15 @@ int main()
 	cout << "This is Lab 2-4:" << endl;
 	Q4();
 	cout << endl;
-	*/
+	
 	cout << "This is Lab 2-5:" << endl;
 	Q5();
 	cout << endl;
-	/*
+	*/
 	cout << "This is Lab 2-6:" << endl;
 	Q6();
 	cout << endl;
-
+	/*
 	cout << "This is Lab 2-7:" << endl;
 	Q7();
 	cout << endl;*/
