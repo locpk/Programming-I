@@ -13,7 +13,7 @@ int Q3()
 	if (cAnw1 == 'F' || cAnw1 == 'f')
 	{
 		++iScore;
-		cout << "CORRECT!Your score is " << iScore << " !\n";
+		cout << "CORRECT! Your score is " << iScore << " !\n";
 	}
 	else if (cAnw1 == 'T' || cAnw1 == 't')
 	{
@@ -26,14 +26,14 @@ int Q3()
 
 	cout << "\'rand()%26+25\' will produce a number within 25 -> 26: ";
 	cin >> cAnw2;
-	if (cAnw2 == 'T' || cAnw2 == 't')
+	if (cAnw2 == 'F' || cAnw2 == 'f')
 	{
 		++iScore;
-		cout << "CORRECT!Your score is " << iScore << " !\n";
+		cout << "CORRECT! Your score is " << iScore << " !\n";
 	}
-	else if (cAnw2 == 'F' || cAnw2 == 'f')
+	else if (cAnw2 == 'T' || cAnw2 == 't')
 	{
-		cout << "Incorrect!\n";
+		cout << "Incorrect! \'rand()%26+25\' produces 25 -> 50!\n";
 	}
 	else
 		cout << "ERROR! You did not input T or F!\n";
@@ -43,7 +43,7 @@ int Q3()
 	if (cAnw3 == 'T' || cAnw3 == 't')
 	{
 		++iScore;
-		cout << "CORRECT!Your score is " << 1 << " !\n";
+		cout << "CORRECT! Your score is " << 1 << " !\n";
 	}
 	else if (cAnw3 == 'F' || cAnw3 == 'f')
 	{
