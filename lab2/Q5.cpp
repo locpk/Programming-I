@@ -1,2 +1,8 @@
 #include "lab2.h"
-using namespace std;
+
+int Q5()
+{
+	using std::cout;
+	using std::cin;
+
+}
