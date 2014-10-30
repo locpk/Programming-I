@@ -38,6 +38,6 @@ int main()
 
 	cout << "This is Lab 1-9:" << endl;
 	Q9();
-	cout << endl£»
+	cout << endl;
 	return EXIT_SUCCESS;
 }
