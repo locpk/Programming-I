@@ -9,16 +9,16 @@ int main()
 	//
 	/*cout << "This is Lab 2-2:" << endl;
 	Q2();
-	cout << endl;*/
+	cout << endl;
 	
 	cout << "This is Lab 2-3:" << endl;
 	Q3();
 	cout << endl;
-	/*
+	*/
 	cout << "This is Lab 2-4:" << endl;
 	Q4();
 	cout << endl;
-
+	/*
 	cout << "This is Lab 2-5:" << endl;
 	Q5();
 	cout << endl;

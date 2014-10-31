@@ -3,19 +3,19 @@ using namespace std;
 
 int main()
 {
-	/*cout << "This is Lab 2-1:" << endl;
+	cout << "This is Lab 2-1:" << endl;
 	Q1();
 	cout << endl;
 	
 	cout << "This is Lab 2-2:" << endl;
 	Q2();
 	cout << endl;
-	*/
+	
 	cout << "This is Lab 2-3:" << endl;
 	Q3();
 	cout << endl;
 	
-	/*cout << "This is Lab 2-4:" << endl;
+	cout << "This is Lab 2-4:" << endl;
 	Q4();
 	cout << endl;
 	
@@ -29,7 +29,7 @@ int main()
 	
 	cout << "This is Lab 2-7:" << endl;
 	Q7();
-	cout << endl;*/
+	cout << endl;
 
 		return EXIT_SUCCESS;
 }
