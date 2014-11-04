@@ -28,17 +28,27 @@ int main()
 		if (cBoard[iPlayerRow][iPlayerCol] == ' ')
 		{
 			cBoard[iPlayerRow][iPlayerCol] = 'X';
-			PrintBoard();
 		}
 		else if (cBoard[iPlayerRow][iPlayerCol] == 'X' || cBoard[iPlayerRow][iPlayerCol] == 'O')
 		{
 			cout << "Already there, can't make the move!! Again!\n";
 			PlayerMoves(&iPlayerRow, &iPlayerCol);
 			cBoard[iPlayerRow][iPlayerCol] = 'X';
+		}
+		//AI
+		cout << "\tTom's random move!\t\n";
+		AiMoves(cBoard,&iPlayerRow, &iPlayerCol);
+		if (cBoard[iPlayerRow][iPlayerCol] == ' ')
+		{
+			cBoard[iPlayerRow][iPlayerCol] = 'O';
 			PrintBoard();
 		}
-		else if (Quit())
-			break;
+		else if (cBoard[iPlayerRow][iPlayerCol] == 'X' || cBoard[iPlayerRow][iPlayerCol] == 'O')
+		{
+			AiMoves(cBoard,&iPlayerRow, &iPlayerCol);
+			cBoard[iPlayerRow][iPlayerCol] = 'O';
+			PrintBoard();
+		}
 	}
 
 	return EXIT_SUCCESS;
