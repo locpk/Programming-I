@@ -4,40 +4,44 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void PlayerMoves(int* iPlayerRow, int* iPlayerCol)
+void PlayerMoves(int* iPlayerRow, int* iPlayerCol, size_t* iOffsetx, size_t* iOffsety)
 {
 
-
+		Console::SetCursorPosition(*iOffsetx, ++*iOffsety);
 		//Player move
-		cout << "Which Row?";
+		cout << "Which Row? (0 >> 2)";
 		cin >> *iPlayerRow;
-		cout << "Which Col?";
-		cin >> *iPlayerCol;
-		//input validation 
-		while (!ValidatingMoves(iPlayerRow,iPlayerCol))
+		//row input validation 
+		while (ValidatingMoves(iPlayerRow))
 		{
+			cin.clear();
+			cin.ignore(LLONG_MAX, '\n');
+			Console::SetCursorPosition(*iOffsetx, ++*iOffsety);
 			cout << "Wrong input!!! Again!\n";
+			Console::SetCursorPosition(*iOffsetx, ++*iOffsety);
+			cout << "Which Row? (0 >> 2)";
 			cin >> *iPlayerRow;
+		}
+		Console::SetCursorPosition(*iOffsetx, ++*iOffsety);
+		cout << "Which Col? (0 >> 2)";
+		cin >> *iPlayerCol;
+		while (ValidatingMoves(iPlayerCol))
+		{
+			cin.clear();
+			cin.ignore(LLONG_MAX, '\n');
+			Console::SetCursorPosition(*iOffsetx, ++*iOffsety);
+			cout << "Wrong input!!! Again!\n";
+			Console::SetCursorPosition(*iOffsetx, ++*iOffsety);
+			cout << "Which Col? (0 >> 2)";
 			cin >> *iPlayerCol;
 		}
 
 }
 
-bool ValidatingMoves(int* iPlayerRow, int* iPlayerCol)
+bool ValidatingMoves(int* iInput)
 {
-	if (0 != *iPlayerRow && 1 != *iPlayerRow && 2 != *iPlayerRow)
-	{
-		cin.clear();
-		cin.ignore(LLONG_MAX, '\n');
-		return false;
-	}
-	else if (0 != *iPlayerCol && 1 != *iPlayerCol && 2 != *iPlayerCol)
-	{
-		cin.clear();
-		cin.ignore(LLONG_MAX, '\n');
-		return false;
-	}
-	return true;
+	return (0 != *iInput && 1 != *iInput && 2 != *iInput);
+	
 }
 
 bool Quit()

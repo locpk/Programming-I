@@ -6,10 +6,12 @@
 
 
 
-void PlayerMoves(int*, int*);
-void AiMoves(char[][3],int*, int*);
-void PrintBoard();
-bool ValidatingMoves(int*, int*);
+void PlayerMoves(int* iPlayerRow, int* iPlayerCol, size_t* iOffsetx, size_t* iOffsety);
+void AiMoves(char cBoard[][BOARD_COL]);
+void PrintBoard(const char cBoard[][BOARD_COL], size_t* iOffsetx, size_t* iOffsety);
+void ClearBoard(char cBoard[][BOARD_COL]);
+bool ValidatingMoves(int* iInput);
+bool CheckBoard(const char cBoard[][BOARD_COL], const char cDelimiter);
 bool Quit();
 int* ScanBoard();
 
